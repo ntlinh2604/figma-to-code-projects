@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="header">
+                <div class="menu-icon" onclick="openMenu()">
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                </div>
+                <h3 class="brand-name">LOGO</h3>
+            </div>
+            <div class="main-content">
+                <h1 class="content-title">DATA ANALYTICS</h1>
+                <p class="content-info">Making sense of your traffic</p>
+                <button class="content-btn">  
+                    <!-- <object data="arrow.svg" > </object>  -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 12H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13 5L20 12L13 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div>GO TO MY STATS </div>
+                </button>
+            </div>
+        </div>
+        
+        <div class="toggle-menu" >
+            <ul class="list">
+                <li class="list-item " onclick="closeMenu()">
+                    <svg class="back-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 12H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13 5L20 12L13 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </li>
+                <li class="list-item">HOME</li>
+                <li class="list-item">MY STATS</li>
+                <li class="list-item">MEMBER</li>
+                <li class="list-item">SETTINGS</li>
+                <li class="list-item">HELP</li>
+    
+            </ul>
+        </div>      
+        
+    </div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>

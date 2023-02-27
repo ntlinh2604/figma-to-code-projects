@@ -1,0 +1,131 @@
+* {
+    color: white;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+
+.container {
+    position: relative;
+    height: 100vh;
+    background: url("bg.jpg")
+}
+
+.header {
+    display: flex;
+    padding: 24px;
+}
+.menu-icon {
+    cursor: pointer;
+}
+.icon {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.brand-name {
+    font-size: 24px;
+    color: #2D7DFF;
+    margin: 0;
+    padding-left: 160px;
+}
+
+.main-content {
+    padding-top: 125px;
+    padding-left: 42px;
+}
+
+.content-title {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.content-info {
+    margin: 0;
+    padding-top: 37px;
+}
+
+.content-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+    width: 225px;
+    height: 60px;
+    background-color: #221F26;
+    border-color: gray;
+}
+svg {
+    margin-right: 10px;
+}
+
+.toggle-menu{
+    background-color: #221F26;
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    top: 0
+}
+
+.list { 
+    padding: 0;
+    list-style: none;
+}
+.list-item {
+    padding-left: 40px;
+    height: 43px;
+    line-height: 43px;
+    cursor: pointer;
+
+}
+
+.back-arrow {
+    rotate: y 180deg;
+}
+
+
+.list-item:hover {
+    background-color: #2D7DFF;
+}
+
+
+@media only screen and (min-width : 1200px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .toggle-menu {
+        width: 200px;
+    }
+
+    .main {
+        position: relative;
+        left: 15%;
+    }
+
+    li:first-child {
+        display: none;
+    }
+
+    .brand-name {
+        padding-left: 15px;
+    }
+    .list{
+        margin-top: 22px
+    }
+}
+
+@media only screen and (max-width : 550px){
+    .toggle-menu{
+
+    display: none;
+    }
+}
