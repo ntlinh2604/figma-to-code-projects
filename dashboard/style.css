@@ -5,7 +5,8 @@
 }
 
 body {
-    margin: 0;
+    background: linear-gradient(220deg, rgba(189,0,255,1) 0%, rgba(0,163,255,1) 100%);
+    margin: 2rem;
     font-family: 'Poppins';
 }
 
@@ -13,16 +14,21 @@ body {
 .container {
     position: relative;
     height: 100vh;
-    background: url("bg.jpg")
+    background: url("bg.jpg");
+    border-radius: 10px;
+    background-size: cover;
+    background-blend-mode: screen;
 }
 
 .header {
     display: flex;
     padding: 24px;
 }
+
 .menu-icon {
     cursor: pointer;
 }
+
 .icon {
     width: 35px;
     height: 5px;
@@ -44,7 +50,7 @@ body {
 
 .content-title {
     margin: 0;
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 800;
 }
 
@@ -61,8 +67,11 @@ body {
     width: 225px;
     height: 60px;
     background-color: #221F26;
-    border-color: gray;
+    border:1px solid gray;
+    cursor: pointer;
+    
 }
+
 svg {
     margin-right: 10px;
 }
@@ -72,7 +81,9 @@ svg {
     position: absolute;
     height: 100vh;
     width: 50%;
-    top: 0
+    top: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .list { 
@@ -104,6 +115,8 @@ svg {
 
     .toggle-menu {
         width: 200px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 
     .main {
@@ -117,6 +130,10 @@ svg {
 
     .brand-name {
         padding-left: 15px;
+    }
+
+    .content-title {
+        font-size: 64px;
     }
     .list{
         margin-top: 22px
